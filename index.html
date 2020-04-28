@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="MyTestApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My tes page</title>
     <script src="angular.min.js"></script>
-    <script src="app.js"></script>
+    <script src="myapp.js"></script>
 </head>
-<body ng-app="MyTestApp">
+<body >
     <h1>Hello World! And this one is the second upload</h1>
     <div ng-controller="TestController">
         <div>
             <input type="text" 
-            ng-model="name" ng-keyup="somFunc()"
+            ng-model="name" 
+            ng-keyup="somFunc();"
             />
         </div>
         <div>
