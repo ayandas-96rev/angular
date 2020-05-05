@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOff List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="CheckOffApp">
+    <header>
+        <h1>Shopping List Check-Off</h1>
+    </header>
+    <div class="toBuy">
+        <div ng-controller="toBuy as one">
+            <h2>To Buy</h2>
+            <div>
+                <li ng-repeat="i in one.list">Buy {{i.quantity}} {{i.item}}
+                    <button ng-click="one.addBought($index)">Bought</button>
+                </li>
+            </div>
+            <div ng-show="one.list.length==0" class="warn">Everything is bought!</div>
+        </div>
+    </div>
+    <div class="bought">
+        <div ng-controller="bought as two">
+            <h2>Already Bought</h2>
+            <div>
+                <li ng-repeat="i in two.list">Bought {{i.quantity}} of {{i.item}}
+                    <img src="https://pluspng.com/img-png/green-tick-png-green-tick-png-file-570.png">
+                </li>
+            </div>
+            <div ng-show="two.list.length==0" class="warn">Nothing bought yet!</div>
+        </div>
+    </div>
+</body>
+</html>
