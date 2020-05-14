@@ -113,7 +113,7 @@ li button{
     border-radius:20px 0 0 0;
     padding: 0 10px;
 }
-li button:hover,li button:focus{
+li button:hover,li button:active{
     background-color:#d40c0c;
     color:white;
 }
