@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #232a30;
+    color:white;
+    padding:17px 5vw;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    display:inline-block;
+    border-right:2px solid #077ce2;
+    padding:0 10px 0 0;
+    font-size: 25px;
+}
+header span{
+    font-size: 16px;
+    margin-left:10px;
+    color:#048aff;
+}
+header div{
+    color:#95989e;
+    font-family: cursive;
+    float:right;
+    vertical-align: middle;
+    padding-top: 8px;
+}
+section{
+    margin:20px 5vw;
+    display: flex;
+}
+section div{
+    
+}
+#input{
+    width: 100%;
+}
+#input input{
+    height:36px;
+    width:100%;
+    margin-bottom:10px;
+    padding-left:8px;
+    border:1px solid #717274;
+    border-radius:5px;
+    outline:none;
+    font-size: 18px;
+}
+#input input:focus,#input input:hover{
+    border-color: #077ce2;
+}
+#input button{
+    height:30px;
+    padding:5px 10px;
+    background-color: transparent;
+    color:#232a30;
+    border:1px solid #717274;
+    border-radius: 5px;
+    cursor: pointer;
+    outline:none;
+}
+#input button:hover{
+    color:#077ce2;
+    border-color:#077ce2;
+}
+#input button:active{
+    color:#fff;
+    border-color:#077ce2;
+    background-color:#077ce2cc;
+}
+#list{
+    padding:0 0 0 0;
+    width:100%;
+    height:85vh;
+    overflow:auto;
+    border-top:1px solid #7e8183;
+    margin-left: 20px;
+}
+li{
+    list-style-image: url(../images/love.png);
+    list-style-position: inside;
+    width:100%;
+    padding:10px 0;
+    padding-bottom: 28px;
+}
+li:hover,li:focus{
+    border-right:2px solid #d40c0c;
+}
+li:nth-child(even){
+    background-color: #f1f1f1;
+    
+}
+span.itemname{
+    font-weight: 600;
+    font-size: 20px;
+}
+span.shortname{
+    color:#1851f3;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+li>p{
+    clear:both;
+    margin:10px 10px 10px 23px;
+}
+li button{
+    display:block;
+    outline:none;
+    background-color:transparent;
+    color:rgb(241, 7, 7);
+    float: right;
+    bottom:1px;
+    right:1px;
+    height: 38px;
+    margin-top:-10px;
+    border:1px solid transparent;
+    border-radius:20px 0 0 0;
+    padding: 0 10px;
+}
+li button:hover,li button:focus{
+    background-color:#d40c0c;
+    color:white;
+}
+.nothing{
+    font-size:25px;
+    text-align: center;
+    padding: 20px 20px;
+    display: none;
+    color:rgba(96, 99, 112, 0.733);
+}
+.loading{
+    text-align: center;
+}
+@media(max-width:860px){
+    section{
+        flex-direction: column;
+    }
+    #list{
+        margin-top: 20px;
+        margin-left:0;
+        margin-bottom: 50px;
+        height:75vh;
+    }
+}
