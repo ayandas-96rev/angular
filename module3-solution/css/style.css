@@ -21,16 +21,10 @@ header span{
     margin-left:10px;
     color:#048aff;
 }
-header div{
-    color:#95989e;
-    font-family: cursive;
-    float:right;
-    vertical-align: middle;
-    padding-top: 8px;
-}
 section{
     margin:20px 5vw;
     display: flex;
+    margin-bottom:10px;
 }
 section div{
     
@@ -133,6 +127,18 @@ li button:hover,li button:focus{
 .loading{
     text-align: center;
 }
+
+footer{
+    background-color: #111518;
+    color:#95989e;
+    font-family: cursive;
+    text-align:center;
+    vertical-align: middle;
+    padding:30px;
+    font-size:.8em;
+}
+
+
 @media(max-width:860px){
     section{
         flex-direction: column;
@@ -140,7 +146,6 @@ li button:hover,li button:focus{
     #list{
         margin-top: 20px;
         margin-left:0;
-        margin-bottom: 50px;
         height:75vh;
     }
 }
